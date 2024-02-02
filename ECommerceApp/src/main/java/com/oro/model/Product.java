@@ -6,10 +6,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
 @Data
-public class User {
+public class Product {
     @Id
     private String id;
-    private String username;
-    private String password;
-    private String email;
+    private String name;
+    private String description;
+    private double price;
+    private int stock;
 }
