@@ -14,7 +14,7 @@ logging:
   level:
     root: INFO
     org.springframework.web: DEBUG
-    com.yourdomain.yourproject: DEBUG
+    com.oro: DEBUG
 
 # If you are using Kafka and want to define its properties as well
 kafka:
