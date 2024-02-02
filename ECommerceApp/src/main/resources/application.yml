@@ -1,0 +1,25 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://${MONGO_INITDB_ROOT_USERNAME}:${MONGO_INITDB_ROOT_PASSWORD}@localhost:27017/${DB_NAME}
+      database: yourdbname
+      authentication-database: admin
+      username: ${MONGO_INITDB_ROOT_USERNAME}
+      password: ${MONGO_INITDB_ROOT_PASSWORD}
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+    com.yourdomain.yourproject: DEBUG
+
+# If you are using Kafka and want to define its properties as well
+kafka:
+  bootstrap-servers: localhost:9092
+  topic: yourTopicName
+  group-id: yourGroupId
+  auto-offset-reset: earliest
+  client-id: clientId
